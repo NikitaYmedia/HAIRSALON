@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact &amp; Booking — Hair Salon</title>
+    <meta name="description"
+        content="Book your appointment at Hair Salon online, find our address and opening hours, or get in touch with the team.">
+    <meta name="theme-color" content="#ff1f75">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/boot.js"></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a class="logo" href="index.html" aria-label="Hair Salon — home">
+                <span>Hair</span>
+                <span>Salon</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"
+                aria-label="Open menu">
+                <span class="nav-toggle__bar"></span>
+            </button>
+            <nav class="site-nav" id="site-nav" aria-label="Main">
+                <ul class="site-nav__list">
+                    <li><a class="site-nav__link" href="index.html">Home</a></li>
+                    <li><a class="site-nav__link" href="services.html">Services</a></li>
+                    <li><a class="site-nav__link" href="about.html">About</a></li>
+                    <li><a class="site-nav__link" href="gallery.html">Gallery</a></li>
+                    <li><a class="site-nav__link is-active" href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+                <a class="btn btn--primary btn--arrow btn--sm" href="contact.html#booking">Book Appointment</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <section class="page-hero" aria-labelledby="page-title">
+            <div class="container">
+                <div class="page-hero__inner">
+                    <ol class="breadcrumbs" aria-label="Breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li aria-current="page">Contact</li>
+                    </ol>
+                    <span class="eyebrow">Get in touch</span>
+                    <h1 class="page-hero__title" id="page-title">Book Your<br>Visit</h1>
+                    <p class="page-hero__lead">Choose a service, pick a time and we will confirm your appointment by
+                        email. Prefer to talk? Call us or drop by the salon.</p>
+                </div>
+                <div class="page-hero__spark" aria-hidden="true">
+                    <span class="sparkle sparkle--xl"></span>
+                    <span class="sparkle sparkle--md sparkle--late"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="booking-title">
+            <div class="container contact-grid">
+
+                <aside class="contact-info" aria-label="Salon details">
+                    <div class="info-card card reveal">
+                        <span class="info-card__icon"><span class="icon icon--pin" aria-hidden="true"></span></span>
+                        <div>
+                            <h2 class="info-card__title">Visit us</h2>
+                            <p class="info-card__text">Nørrebrogade 48<br>2200 Copenhagen N, Denmark</p>
+                        </div>
+                    </div>
+                    <div class="info-card card reveal" data-delay="1">
+                        <span class="info-card__icon"><span class="icon icon--phone" aria-hidden="true"></span></span>
+                        <div>
+                            <h2 class="info-card__title">Call us</h2>
+                            <p class="info-card__text"><a href="tel:+4512345678">+45 12 34 56 78</a></p>
+                        </div>
+                    </div>
+                    <div class="info-card card reveal" data-delay="2">
+                        <span class="info-card__icon"><span class="icon icon--mail" aria-hidden="true"></span></span>
+                        <div>
+                            <h2 class="info-card__title">Email</h2>
+                            <p class="info-card__text"><a href="mailto:hello@hairsalon.dk">hello@hairsalon.dk</a></p>
+                        </div>
+                    </div>
+                    <div class="info-card card reveal" data-delay="3">
+                        <span class="info-card__icon"><span class="icon icon--clock" aria-hidden="true"></span></span>
+                        <div>
+                            <h2 class="info-card__title">Opening hours</h2>
+                            <dl class="hours">
+                                <div class="hours__row">
+                                    <dt>Monday – Friday</dt>
+                                    <dd>09:00 – 19:00</dd>
+                                </div>
+                                <div class="hours__row">
+                                    <dt>Saturday</dt>
+                                    <dd>10:00 – 17:00</dd>
+                                </div>
+                                <div class="hours__row hours__row--closed">
+                                    <dt>Sunday</dt>
+                                    <dd>Closed</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </aside>
+
+                <div class="booking reveal reveal--right" id="booking">
+                    <div class="booking__head" data-booking-head data-step="1">
+                        <span class="eyebrow">Online booking</span>
+                        <h2 id="booking-title">Book your appointment</h2>
+                        <p>It takes less than a minute. No payment is needed to book.</p>
+                    </div>
+
+                    <div class="booking__progress-wrap" data-booking-head>
+                        <ol class="steps" aria-label="Booking progress">
+                            <li class="steps__item is-active" data-step-item="1"><span
+                                    class="steps__num">1</span><span>Service</span></li>
+                            <li class="steps__item" data-step-item="2"><span class="steps__num">2</span><span>Date &amp;
+                                    time</span></li>
+                            <li class="steps__item" data-step-item="3"><span class="steps__num">3</span><span>Your
+                                    details</span></li>
+                            <li class="steps__item" data-step-item="4"><span
+                                    class="steps__num">4</span><span>Confirm</span></li>
+                        </ol>
+                    </div>
+
+                    <form id="booking-form" data-step="1" novalidate>
+                        <div class="progress" aria-hidden="true"><span class="progress__bar"></span></div>
+
+                        <div class="booking__panel is-active" data-panel="1">
+                            <h3 class="booking__title">What would you like to book?</h3>
+                            <fieldset class="fieldset">
+                                <legend class="sr-only">Service</legend>
+                                <div class="choice-grid">
+                                    <label class="choice"><input class="choice__input" type="radio" name="service"
+                                            value="women-cut" data-name="Women’s haircut"
+                                            data-price="from 495 DKK"><span class="choice__body"><span
+                                                class="choice__title">Women’s haircut</span><span
+                                                class="choice__meta">60 min · from 495 DKK</span></span></label>
+                                    <label class="choice"><input class="choice__input" type="radio" name="service"
+                                            value="men-cut" data-name="Men’s haircut" data-price="from 395 DKK"><span
+                                            class="choice__body"><span class="choice__title">Men’s haircut</span><span
+                                                class="choice__meta">40 min · from 395 DKK</span></span></label>
+                                    <label class="choice"><input class="choice__input" type="radio" name="service"
+                                            value="colour" data-name="Full colour" data-price="from 890 DKK"><span
+                                            class="choice__body"><span class="choice__title">Full colour</span><span
+                                                class="choice__meta">2 h · from 890 DKK</span></span></label>
+                                    <label class="choice"><input class="choice__input" type="radio" name="service"
+                                            value="balayage" data-name="Balayage" data-price="from 1,490 DKK"><span
+                                            class="choice__body"><span class="choice__title">Balayage</span><span
+                                                class="choice__meta">3 h · from 1,490 DKK</span></span></label>
+                                    <label class="choice"><input class="choice__input" type="radio" name="service"
+                                            value="blowdry" data-name="Blow-dry &amp; style"
+                                            data-price="from 395 DKK"><span class="choice__body"><span
+                                                class="choice__title">Blow-dry &amp; style</span><span
+                                                class="choice__meta">45 min · from 395 DKK</span></span></label>
+                                    <label class="choice"><input class="choice__input" type="radio" name="service"
+                                            value="updo" data-name="Occasion / bridal updo"
+                                            data-price="from 695 DKK"><span class="choice__body"><span
+                                                class="choice__title">Occasion / bridal updo</span><span
+                                                class="choice__meta">75 min · from 695 DKK</span></span></label>
+                                    <label class="choice"><input class="choice__input" type="radio" name="service"
+                                            value="keratin" data-name="Keratin smoothing"
+                                            data-price="from 1,590 DKK"><span class="choice__body"><span
+                                                class="choice__title">Keratin smoothing</span><span
+                                                class="choice__meta">2.5 h · from 1,590 DKK</span></span></label>
+                                    <label class="choice"><input class="choice__input" type="radio" name="service"
+                                            value="repair" data-name="Deep repair treatment"
+                                            data-price="from 450 DKK"><span class="choice__body"><span
+                                                class="choice__title">Deep repair treatment</span><span
+                                                class="choice__meta">40 min · from 450 DKK</span></span></label>
+                                </div>
+                                <p class="field__error" data-error-for="service" role="alert"></p>
+                            </fieldset>
+                            <div class="booking__actions booking__actions--end">
+                                <button class="btn btn--primary btn--arrow" type="button" data-next>Continue</button>
+                            </div>
+                        </div>
+
+                        <div class="booking__panel" data-panel="2" hidden>
+                            <h3 class="booking__title">When suits you best?</h3>
+                            <div class="form-grid">
+                                <div class="field">
+                                    <label class="field__label" for="stylist">Stylist <small>(optional)</small></label>
+                                    <select class="select" id="stylist" name="stylist">
+                                        <option value="any">No preference</option>
+                                        <option value="maja">Maja Larsen</option>
+                                        <option value="sofie">Sofie Nielsen</option>
+                                        <option value="emil">Emil Andersen</option>
+                                        <option value="freja">Freja Holm</option>
+                                    </select>
+                                    <p class="field__error"></p>
+                                </div>
+                                <div class="field">
+                                    <label class="field__label" for="date">Date</label>
+                                    <input class="input" type="date" id="date" name="date" required>
+                                    <p class="field__error" data-error-for="date" role="alert"></p>
+                                </div>
+                            </div>
+                            <fieldset class="fieldset">
+                                <legend class="fieldset__legend">Available times</legend>
+                                <div class="slots">
+                                    <label class="choice"><input class="choice__input" type="radio" name="time"
+                                            value="09:00"><span class="choice__body">09:00</span></label>
+                                    <label class="choice"><input class="choice__input" type="radio" name="time"
+                                            value="10:00"><span class="choice__body">10:00</span></label>
+                                    <label class="choice"><input class="choice__input" type="radio" name="time"
+                                            value="11:00"><span class="choice__body">11:00</span></label>
+                                    <label class="choice"><input class="choice__input" type="radio" name="time"
+                                            value="12:00" disabled><span class="choice__body">12:00</span></label>
+                                    <label class="choice"><input class="choice__input" type="radio" name="time"
+                                            value="13:00"><span class="choice__body">13:00</span></label>
+                                    <label class="choice"><input class="choice__input" type="radio" name="time"
+                                            value="14:00"><span class="choice__body">14:00</span></label>
+                                    <label class="choice"><input class="choice__input" type="radio" name="time"
+                                            value="15:00" disabled><span class="choice__body">15:00</span></label>
+                                    <label class="choice"><input class="choice__input" type="radio" name="time"
+                                            value="16:00"><span class="choice__body">16:00</span></label>
+                                    <label class="choice"><input class="choice__input" type="radio" name="time"
+                                            value="17:00"><span class="choice__body">17:00</span></label>
+                                </div>
+                                <p class="field__error" data-error-for="time" role="alert"></p>
+                            </fieldset>
+                            <div class="booking__actions">
+                                <button class="btn btn--ghost btn--back" type="button" data-prev>Back</button>
+                                <button class="btn btn--primary btn--arrow" type="button" data-next>Continue</button>
+                            </div>
+                        </div>
+
+                        <div class="booking__panel" data-panel="3" hidden>
+                            <h3 class="booking__title">Tell us about you</h3>
+                            <div class="form-grid">
+                                <div class="field">
+                                    <label class="field__label" for="name">Full name</label>
+                                    <input class="input" type="text" id="name" name="name" autocomplete="name"
+                                        placeholder="Anna Jensen" required>
+                                    <p class="field__error" data-error-for="name" role="alert"></p>
+                                </div>
+                                <div class="field">
+                                    <label class="field__label" for="email">Email</label>
+                                    <input class="input" type="email" id="email" name="email" autocomplete="email"
+                                        placeholder="anna@example.com" required>
+                                    <p class="field__error" data-error-for="email" role="alert"></p>
+                                </div>
+                                <div class="field form-grid__full">
+                                    <label class="field__label" for="phone">Phone <small>(optional)</small></label>
+                                    <input class="input" type="tel" id="phone" name="phone" autocomplete="tel"
+                                        placeholder="+45 12 34 56 78">
+                                    <p class="field__error" data-error-for="phone" role="alert"></p>
+                                </div>
+                                <div class="field form-grid__full">
+                                    <label class="field__label" for="notes">Anything we should know?
+                                        <small>(optional)</small></label>
+                                    <textarea class="textarea" id="notes" name="notes"
+                                        placeholder="Hair length, inspiration photos, allergies…"></textarea>
+                                </div>
+                            </div>
+                            <div class="booking__actions">
+                                <button class="btn btn--ghost btn--back" type="button" data-prev>Back</button>
+                                <button class="btn btn--primary btn--arrow" type="button" data-next>Review</button>
+                            </div>
+                        </div>
+
+                        <div class="booking__panel" data-panel="4" hidden>
+                            <h3 class="booking__title">Check your booking</h3>
+                            <dl class="summary">
+                                <div class="summary__row">
+                                    <dt>Service</dt>
+                                    <dd data-summary="service"></dd>
+                                </div>
+                                <div class="summary__row">
+                                    <dt>Price</dt>
+                                    <dd data-summary="price"></dd>
+                                </div>
+                                <div class="summary__row">
+                                    <dt>Stylist</dt>
+                                    <dd data-summary="stylist"></dd>
+                                </div>
+                                <div class="summary__row">
+                                    <dt>Date</dt>
+                                    <dd data-summary="date"></dd>
+                                </div>
+                                <div class="summary__row">
+                                    <dt>Time</dt>
+                                    <dd data-summary="time"></dd>
+                                </div>
+                                <div class="summary__row">
+                                    <dt>Name</dt>
+                                    <dd data-summary="name"></dd>
+                                </div>
+                                <div class="summary__row">
+                                    <dt>Email</dt>
+                                    <dd data-summary="email"></dd>
+                                </div>
+                            </dl>
+                            <div class="field">
+                                <label class="check">
+                                    <input class="check__input" type="checkbox" name="consent">
+                                    <span class="check__box"></span>
+                                    <span>I agree to be contacted about this booking. Final prices are confirmed at the
+                                        salon.</span>
+                                </label>
+                                <p class="field__error" data-error-for="consent" role="alert"></p>
+                            </div>
+                            <div class="booking__actions">
+                                <button class="btn btn--ghost btn--back" type="button" data-prev>Back</button>
+                                <button class="btn btn--primary btn--arrow" type="submit">Confirm booking</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="booking__success" data-success hidden>
+                        <span class="booking__success-icon"><span class="icon icon--check"
+                                aria-hidden="true"></span></span>
+                        <h2 tabindex="-1">You are all set!</h2>
+                        <p>We have noted your request and will send a confirmation to <strong
+                                data-success-email></strong> shortly.</p>
+                        <span class="booking__ref" data-ref></span>
+                        <p>Keep this reference handy — we will look forward to seeing you.</p>
+                        <button class="btn btn--outline btn--sm" type="button" data-new-booking>Make another
+                            booking</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="map-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Find us</span>
+                    <h2 id="map-title">Right in the heart of the city</h2>
+                    <p>Just a short walk from the lakes and a minute from the bus stop. Bicycle parking is right outside
+                        the door.</p>
+                </div>
+                <div class="map reveal reveal--zoom" role="img"
+                    aria-label="Stylised map showing the salon location at Nørrebrogade 48">
+                    <span class="map__water"></span>
+                    <span class="map__park"></span>
+                    <span class="map__road map__road--a"></span>
+                    <span class="map__road map__road--b"></span>
+                    <span class="map__road map__road--c"></span>
+                    <span class="map__pin"></span>
+                    <span class="map__label">Hair Salon<small>Nørrebrogade 48, Copenhagen</small></span>
+                    <a class="btn btn--white btn--sm btn--arrow map__link"
+                        href="https://www.openstreetmap.org/search?query=N%C3%B8rrebrogade%2048%20Copenhagen"
+                        target="_blank" rel="noopener">Open in maps</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container site-footer__main">
+            <a class="logo logo--footer" href="index.html"
+                aria-label="Hair Salon — home"><span>Hair</span><span>Salon</span></a>
+            <nav class="footer-nav" aria-label="Footer">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <ul class="social" aria-label="Social media">
+                <li><a class="social__link" href="https://www.instagram.com/" target="_blank" rel="noopener"
+                        aria-label="Instagram"><span class="icon icon--instagram" aria-hidden="true"></span></a></li>
+                <li><a class="social__link" href="https://www.facebook.com/" target="_blank" rel="noopener"
+                        aria-label="Facebook"><span class="icon icon--facebook" aria-hidden="true"></span></a></li>
+                <li><a class="social__link" href="https://www.tiktok.com/" target="_blank" rel="noopener"
+                        aria-label="TikTok"><span class="icon icon--tiktok" aria-hidden="true"></span></a></li>
+                <li><a class="social__link" href="https://www.youtube.com/" target="_blank" rel="noopener"
+                        aria-label="YouTube"><span class="icon icon--youtube" aria-hidden="true"></span></a></li>
+            </ul>
+        </div>
+        <div class="site-footer__bar">
+            <div class="container site-footer__bar-inner">
+                <span>© <span data-year>2026</span> Hair Salon. All rights reserved.</span>
+                <span>Mon–Fri 09:00–19:00 · Sat 10:00–17:00 · <a href="contact.html">Find us</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <button class="to-top" type="button" aria-label="Back to top"><span class="icon icon--arrow"
+            aria-hidden="true"></span></button>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/booking.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Services &amp; Prices — Hair Salon</title>
+    <meta name="description"
+        content="Haircuts, colouring, styling and hair care treatments at Hair Salon. See our full price list and signature packages.">
+    <meta name="theme-color" content="#ff1f75">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/boot.js"></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a class="logo" href="index.html" aria-label="Hair Salon — home">
+                <span>Hair</span>
+                <span>Salon</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"
+                aria-label="Open menu">
+                <span class="nav-toggle__bar"></span>
+            </button>
+            <nav class="site-nav" id="site-nav" aria-label="Main">
+                <ul class="site-nav__list">
+                    <li><a class="site-nav__link" href="index.html">Home</a></li>
+                    <li><a class="site-nav__link is-active" href="services.html" aria-current="page">Services</a></li>
+                    <li><a class="site-nav__link" href="about.html">About</a></li>
+                    <li><a class="site-nav__link" href="gallery.html">Gallery</a></li>
+                    <li><a class="site-nav__link" href="contact.html">Contact</a></li>
+                </ul>
+                <a class="btn btn--primary btn--arrow btn--sm" href="contact.html#booking">Book Appointment</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <section class="page-hero" aria-labelledby="page-title">
+            <div class="container">
+                <div class="page-hero__inner">
+                    <ol class="breadcrumbs" aria-label="Breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li aria-current="page">Services</li>
+                    </ol>
+                    <span class="eyebrow">Our services</span>
+                    <h1 class="page-hero__title" id="page-title">Services<br>We Offer</h1>
+                    <p class="page-hero__lead">From a fresh cut to a full colour transformation — every service starts
+                        with a consultation so the result is made for you.</p>
+                </div>
+                <div class="page-hero__spark" aria-hidden="true">
+                    <span class="sparkle sparkle--xl"></span>
+                    <span class="sparkle sparkle--md sparkle--late"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="prices-title">
+            <div class="container">
+                <h2 class="sr-only" id="prices-title">Price list</h2>
+
+                <div class="price-toolbar">
+                    <div class="chips" role="group" aria-label="Filter services">
+                        <button class="chip is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+                        <button class="chip" type="button" data-filter="cut" aria-pressed="false">Haircuts</button>
+                        <button class="chip" type="button" data-filter="color" aria-pressed="false">Colouring</button>
+                        <button class="chip" type="button" data-filter="style" aria-pressed="false">Styling</button>
+                        <button class="chip" type="button" data-filter="care" aria-pressed="false">Hair care</button>
+                    </div>
+                    <p class="price-toolbar__count" data-count-label aria-live="polite">Showing 14 services</p>
+                </div>
+
+                <div class="price-list" data-services>
+
+                    <article class="price-card" data-category="cut">
+                        <span class="price-card__icon"><span class="icon icon--scissors"
+                                aria-hidden="true"></span></span>
+                        <div>
+                            <h3 class="price-card__title">Women’s Haircut</h3>
+                            <p class="price-card__desc">Consultation, shampoo, precision cut and a finishing blow-dry.
+                            </p>
+                            <span class="price-card__meta"><span class="icon icon--sm icon--clock"
+                                    aria-hidden="true"></span>60 min</span>
+                        </div>
+                        <div class="price-card__buy">
+                            <span class="price-card__price"><small>from</small>495 DKK</span>
+                            <a class="btn btn--ghost btn--sm" href="contact.html?service=women-cut#booking">Book</a>
+                        </div>
+                    </article>
+
+                    <article class="price-card" data-category="cut">
+                        <span class="price-card__icon"><span class="icon icon--scissors"
+                                aria-hidden="true"></span></span>
+                        <div>
+                            <h3 class="price-card__title">Men’s Haircut</h3>
+                            <p class="price-card__desc">Clean, modern cut with a neck shave and styling.</p>
+                            <span class="price-card__meta"><span class="icon icon--sm icon--clock"
+                                    aria-hidden="true"></span>40 min</span>
+                        </div>
+                        <div class="price-card__buy">
+                            <span class="price-card__price"><small>from</small>395 DKK</span>
+                            <a class="btn btn--ghost btn--sm" href="contact.html?service=men-cut#booking">Book</a>
+                        </div>
+                    </article>
+
+                    <article class="price-card" data-category="cut">
+                        <span class="price-card__icon"><span class="icon icon--scissors"
+                                aria-hidden="true"></span></span>
+                        <div>
+                            <h3 class="price-card__title">Kids’ Haircut</h3>
+                            <p class="price-card__desc">Gentle and fun cut for children under 12.</p>
+                            <span class="price-card__meta"><span class="icon icon--sm icon--clock"
+                                    aria-hidden="true"></span>30 min</span>
+                        </div>
+                        <div class="price-card__buy">
+                            <span class="price-card__price"><small>from</small>295 DKK</span>
+                            <a class="btn btn--ghost btn--sm" href="contact.html?service=women-cut#booking">Book</a>
+                        </div>
+                    </article>
+
+                    <article class="price-card" data-category="cut">
+                        <span class="price-card__icon"><span class="icon icon--scissors"
+                                aria-hidden="true"></span></span>
+                        <div>
+                            <h3 class="price-card__title">Fringe &amp; Shape Refresh</h3>
+                            <p class="price-card__desc">A quick tidy-up between cuts to keep your shape sharp.</p>
+                            <span class="price-card__meta"><span class="icon icon--sm icon--clock"
+                                    aria-hidden="true"></span>15 min</span>
+                        </div>
+                        <div class="price-card__buy">
+                            <span class="price-card__price"><small>from</small>150 DKK</span>
+                            <a class="btn btn--ghost btn--sm" href="contact.html?service=women-cut#booking">Book</a>
+                        </div>
+                    </article>
+
+                    <article class="price-card" data-category="color">
+                        <span class="price-card__icon"><span class="icon icon--brush" aria-hidden="true"></span></span>
+                        <div>
+                            <h3 class="price-card__title">Full Colour</h3>
+                            <p class="price-card__desc">All-over colour with premium products, gloss and treatment.</p>
+                            <span class="price-card__meta"><span class="icon icon--sm icon--clock"
+                                    aria-hidden="true"></span>2 h</span>
+                        </div>
+                        <div class="price-card__buy">
+                            <span class="price-card__price"><small>from</small>890 DKK</span>
+                            <a class="btn btn--ghost btn--sm" href="contact.html?service=colour#booking">Book</a>
+                        </div>
+                    </article>
+
+                    <article class="price-card" data-category="color">
+                        <span class="price-card__icon"><span class="icon icon--brush" aria-hidden="true"></span></span>
+                        <div>
+                            <h3 class="price-card__title">Balayage</h3>
+                            <p class="price-card__desc">Hand-painted highlights for a soft, sun-kissed, low-maintenance
+                                look.</p>
+                            <span class="price-card__meta"><span class="icon icon--sm icon--clock"
+                                    aria-hidden="true"></span>3 h</span>
+                        </div>
+                        <div class="price-card__buy">
+                            <span class="price-card__price"><small>from</small>1,490 DKK</span>
+                            <a class="btn btn--ghost btn--sm" href="contact.html?service=balayage#booking">Book</a>
+                        </div>
+                    </article>
+
+                    <article class="price-card" data-category="color">
+                        <span class="price-card__icon"><span class="icon icon--brush" aria-hidden="true"></span></span>
+                        <div>
+                            <h3 class="price-card__title">Root Touch-Up</h3>
+                            <p class="price-card__desc">Perfectly blended regrowth colour to keep your shade fresh.</p>
+                            <span class="price-card__meta"><span class="icon icon--sm icon--clock"
+                                    aria-hidden="true"></span>90 min</span>
+                        </div>
+                        <div class="price-card__buy">
+                            <span class="price-card__price"><small>from</small>650 DKK</span>
+                            <a class="btn btn--ghost btn--sm" href="contact.html?service=colour#booking">Book</a>
+                        </div>
+                    </article>
+
+                    <article class="price-card" data-category="color">
+                        <span class="price-card__icon"><span class="icon icon--brush" aria-hidden="true"></span></span>
+                        <div>
+                            <h3 class="price-card__title">Toner &amp; Gloss</h3>
+                            <p class="price-card__desc">Refresh tone, cancel brassiness and add mirror-like shine.</p>
+                            <span class="price-card__meta"><span class="icon icon--sm icon--clock"
+                                    aria-hidden="true"></span>45 min</span>
+                        </div>
+                        <div class="price-card__buy">
+                            <span class="price-card__price"><small>from</small>390 DKK</span>
+                            <a class="btn btn--ghost btn--sm" href="contact.html?service=colour#booking">Book</a>
+                        </div>
+                    </article>
+
+                    <article class="price-card" data-category="style">
+                        <span class="price-card__icon"><span class="icon icon--dryer" aria-hidden="true"></span></span>
+                        <div>
+                            <h3 class="price-card__title">Blow-Dry &amp; Style</h3>
+                            <p class="price-card__desc">Wash, blow-dry and finish — smooth, voluminous or sleek.</p>
+                            <span class="price-card__meta"><span class="icon icon--sm icon--clock"
+                                    aria-hidden="true"></span>45 min</span>
+                        </div>
+                        <div class="price-card__buy">
+                            <span class="price-card__price"><small>from</small>395 DKK</span>
+                            <a class="btn btn--ghost btn--sm" href="contact.html?service=blowdry#booking">Book</a>
+                        </div>
+                    </article>
+
+                    <article class="price-card" data-category="style">
+                        <span class="price-card__icon"><span class="icon icon--dryer" aria-hidden="true"></span></span>
+                        <div>
+                            <h3 class="price-card__title">Curls &amp; Waves</h3>
+                            <p class="price-card__desc">Heat-styled curls or beachy waves that last all day and night.
+                            </p>
+                            <span class="price-card__meta"><span class="icon icon--sm icon--clock"
+                                    aria-hidden="true"></span>60 min</span>
+                        </div>
+                        <div class="price-card__buy">
+                            <span class="price-card__price"><small>from</small>495 DKK</span>
+                            <a class="btn btn--ghost btn--sm" href="contact.html?service=blowdry#booking">Book</a>
+                        </div>
+                    </article>
+
+                    <article class="price-card" data-category="style">
+                        <span class="price-card__icon"><span class="icon icon--dryer" aria-hidden="true"></span></span>
+                        <div>
+                            <h3 class="price-card__title">Occasion Updo</h3>
+                            <p class="price-card__desc">Sculpted updo or braided style for parties, proms and events.
+                            </p>
+                            <span class="price-card__meta"><span class="icon icon--sm icon--clock"
+                                    aria-hidden="true"></span>75 min</span>
+                        </div>
+                        <div class="price-card__buy">
+                            <span class="price-card__price"><small>from</small>695 DKK</span>
+                            <a class="btn btn--ghost btn--sm" href="contact.html?service=updo#booking">Book</a>
+                        </div>
+                    </article>
+
+                    <article class="price-card" data-category="care">
+                        <span class="price-card__icon"><span class="icon icon--drop" aria-hidden="true"></span></span>
+                        <div>
+                            <h3 class="price-card__title">Keratin Smoothing</h3>
+                            <p class="price-card__desc">Frizz-free, glossy hair for up to three months.</p>
+                            <span class="price-card__meta"><span class="icon icon--sm icon--clock"
+                                    aria-hidden="true"></span>2.5 h</span>
+                        </div>
+                        <div class="price-card__buy">
+                            <span class="price-card__price"><small>from</small>1,590 DKK</span>
+                            <a class="btn btn--ghost btn--sm" href="contact.html?service=keratin#booking">Book</a>
+                        </div>
+                    </article>
+
+                    <article class="price-card" data-category="care">
+                        <span class="price-card__icon"><span class="icon icon--drop" aria-hidden="true"></span></span>
+                        <div>
+                            <h3 class="price-card__title">Deep Repair Treatment</h3>
+                            <p class="price-card__desc">Intensive mask and steam to restore dry or damaged hair.</p>
+                            <span class="price-card__meta"><span class="icon icon--sm icon--clock"
+                                    aria-hidden="true"></span>40 min</span>
+                        </div>
+                        <div class="price-card__buy">
+                            <span class="price-card__price"><small>from</small>450 DKK</span>
+                            <a class="btn btn--ghost btn--sm" href="contact.html?service=repair#booking">Book</a>
+                        </div>
+                    </article>
+
+                    <article class="price-card" data-category="care">
+                        <span class="price-card__icon"><span class="icon icon--drop" aria-hidden="true"></span></span>
+                        <div>
+                            <h3 class="price-card__title">Scalp Spa Ritual</h3>
+                            <p class="price-card__desc">Exfoliating scrub, relaxing massage and nourishing serum.</p>
+                            <span class="price-card__meta"><span class="icon icon--sm icon--clock"
+                                    aria-hidden="true"></span>30 min</span>
+                        </div>
+                        <div class="price-card__buy">
+                            <span class="price-card__price"><small>from</small>390 DKK</span>
+                            <a class="btn btn--ghost btn--sm" href="contact.html?service=repair#booking">Book</a>
+                        </div>
+                    </article>
+
+                    <article class="price-card" data-category="care">
+                        <span class="price-card__icon"><span class="icon icon--drop" aria-hidden="true"></span></span>
+                        <div>
+                            <h3 class="price-card__title">Bond-Repair Add-On</h3>
+                            <p class="price-card__desc">Protects and rebuilds hair strength during colour services.</p>
+                            <span class="price-card__meta"><span class="icon icon--sm icon--clock"
+                                    aria-hidden="true"></span>15 min</span>
+                        </div>
+                        <div class="price-card__buy">
+                            <span class="price-card__price"><small>from</small>220 DKK</span>
+                            <a class="btn btn--ghost btn--sm" href="contact.html?service=colour#booking">Book</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--tint" aria-labelledby="packages-title">
+            <div class="container">
+                <div class="section-head section-head--center reveal">
+                    <span class="eyebrow">Signature packages</span>
+                    <h2 id="packages-title">Treat yourself, save more</h2>
+                    <p>Our most-loved combinations, bundled at a special price.</p>
+                </div>
+
+                <div class="packages">
+                    <article class="package reveal" data-delay="1">
+                        <span class="package__tag">Quick fix</span>
+                        <h3>Mini Refresh</h3>
+                        <p class="package__price">745 <small>DKK</small></p>
+                        <ul class="package__list">
+                            <li>Women’s haircut</li>
+                            <li>Deep repair treatment</li>
+                            <li>Blow-dry finish</li>
+                        </ul>
+                        <a class="btn btn--outline btn--arrow btn--sm"
+                            href="contact.html?service=women-cut#booking">Choose package</a>
+                    </article>
+
+                    <article class="package package--featured reveal" data-delay="2">
+                        <span class="package__tag">Most popular</span>
+                        <h3>The Glow-Up</h3>
+                        <p class="package__price">1,990 <small>DKK</small></p>
+                        <ul class="package__list">
+                            <li>Balayage or full colour</li>
+                            <li>Toner &amp; gloss</li>
+                            <li>Precision haircut</li>
+                            <li>Bond-repair add-on</li>
+                            <li>Styled blow-dry</li>
+                        </ul>
+                        <a class="btn btn--white btn--arrow btn--sm" href="contact.html?service=balayage#booking">Choose
+                            package</a>
+                    </article>
+
+                    <article class="package reveal" data-delay="3">
+                        <span class="package__tag">For the big day</span>
+                        <h3>Bridal Day</h3>
+                        <p class="package__price">1,490 <small>DKK</small></p>
+                        <ul class="package__list">
+                            <li>Trial styling session</li>
+                            <li>Wedding-day updo</li>
+                            <li>Veil &amp; accessory fitting</li>
+                            <li>Touch-up kit</li>
+                        </ul>
+                        <a class="btn btn--outline btn--arrow btn--sm" href="contact.html?service=updo#booking">Choose
+                            package</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="faq-title">
+            <div class="container faq-layout">
+                <div class="faq-layout__intro reveal reveal--left">
+                    <span class="eyebrow">Good to know</span>
+                    <h2 id="faq-title">Frequently asked questions</h2>
+                    <p>Can’t find your answer? Send us a message and we will reply within one working day.</p>
+                    <a class="btn btn--primary btn--arrow btn--sm" href="contact.html">Contact us</a>
+                </div>
+                <div class="accordion reveal reveal--right">
+                    <details class="accordion__item" open>
+                        <summary class="accordion__summary">How long does a colour appointment take?</summary>
+                        <div class="accordion__body">
+                            <p>A root touch-up takes about 90 minutes, a full colour around two hours and balayage up to
+                                three hours. Your stylist will give you an exact estimate during the consultation.</p>
+                        </div>
+                    </details>
+                    <details class="accordion__item">
+                        <summary class="accordion__summary">Do you offer a consultation before colouring?</summary>
+                        <div class="accordion__body">
+                            <p>Yes — every colour service begins with a free consultation. We talk through your goals,
+                                check your hair history and, if needed, do a strand test.</p>
+                        </div>
+                    </details>
+                    <details class="accordion__item">
+                        <summary class="accordion__summary">What products do you use?</summary>
+                        <div class="accordion__body">
+                            <p>We work with professional, salon-grade brands that are kind to your hair. Ask us about
+                                vegan and ammonia-free options.</p>
+                        </div>
+                    </details>
+                    <details class="accordion__item">
+                        <summary class="accordion__summary">How do I cancel or reschedule?</summary>
+                        <div class="accordion__body">
+                            <p>Please let us know at least 24 hours in advance by phone or email, and we will happily
+                                find you a new time.</p>
+                        </div>
+                    </details>
+                    <details class="accordion__item">
+                        <summary class="accordion__summary">Do prices depend on hair length?</summary>
+                        <div class="accordion__body">
+                            <p>All prices are starting prices. Very long or thick hair may need extra time and product,
+                                which we will always discuss with you before we begin.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="cta reveal reveal--zoom">
+                    <div class="cta__sparks" aria-hidden="true">
+                        <span class="sparkle sparkle--white"></span>
+                        <span class="sparkle sparkle--white sparkle--late"></span>
+                    </div>
+                    <div class="cta__text">
+                        <h2 class="cta__title" id="cta-title">Ready for a new look?</h2>
+                        <p class="cta__copy">Book your appointment today and let us take care of the rest.</p>
+                    </div>
+                    <a class="btn btn--white btn--arrow" href="contact.html#booking">Book Appointment</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container site-footer__main">
+            <a class="logo logo--footer" href="index.html"
+                aria-label="Hair Salon — home"><span>Hair</span><span>Salon</span></a>
+            <nav class="footer-nav" aria-label="Footer">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <ul class="social" aria-label="Social media">
+                <li><a class="social__link" href="https://www.instagram.com/" target="_blank" rel="noopener"
+                        aria-label="Instagram"><span class="icon icon--instagram" aria-hidden="true"></span></a></li>
+                <li><a class="social__link" href="https://www.facebook.com/" target="_blank" rel="noopener"
+                        aria-label="Facebook"><span class="icon icon--facebook" aria-hidden="true"></span></a></li>
+                <li><a class="social__link" href="https://www.tiktok.com/" target="_blank" rel="noopener"
+                        aria-label="TikTok"><span class="icon icon--tiktok" aria-hidden="true"></span></a></li>
+                <li><a class="social__link" href="https://www.youtube.com/" target="_blank" rel="noopener"
+                        aria-label="YouTube"><span class="icon icon--youtube" aria-hidden="true"></span></a></li>
+            </ul>
+        </div>
+        <div class="site-footer__bar">
+            <div class="container site-footer__bar-inner">
+                <span>© <span data-year>2026</span> Hair Salon. All rights reserved.</span>
+                <span>Mon–Fri 09:00–19:00 · Sat 10:00–17:00 · <a href="contact.html">Find us</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <button class="to-top" type="button" aria-label="Back to top"><span class="icon icon--arrow"
+            aria-hidden="true"></span></button>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/services.js" defer></script>
+</body>
+
+</html>
