@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hair Salon — Modern hair salon for your perfect style</title>
+    <meta name="description"
+        content="Hair Salon is a modern salon for haircuts, styling, colouring and hair care. Look good, feel amazing — book your appointment today.">
+    <meta name="theme-color" content="#ff1f75">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/boot.js"></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a class="logo" href="index.html" aria-label="Hair Salon — home">
+                <span>Hair</span>
+                <span>Salon</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"
+                aria-label="Open menu">
+                <span class="nav-toggle__bar"></span>
+            </button>
+            <nav class="site-nav" id="site-nav" aria-label="Main">
+                <ul class="site-nav__list">
+                    <li><a class="site-nav__link is-active" href="index.html" aria-current="page">Home</a></li>
+                    <li><a class="site-nav__link" href="services.html">Services</a></li>
+                    <li><a class="site-nav__link" href="about.html">About</a></li>
+                    <li><a class="site-nav__link" href="gallery.html">Gallery</a></li>
+                    <li><a class="site-nav__link" href="contact.html">Contact</a></li>
+                </ul>
+                <a class="btn btn--primary btn--arrow btn--sm" href="contact.html#booking">Book Appointment</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero__inner">
+                <div class="hero__content">
+                    <span class="sparkle sparkle--lg hero__spark" aria-hidden="true"></span>
+                    <h1 class="hero__title" id="hero-title">
+                        <span class="hero__line">Look good.</span>
+                        <span class="hero__line">Feel <em class="hero__accent">amazing.</em></span>
+                    </h1>
+                    <p class="hero__text">Modern hair salon for your perfect style.</p>
+                    <div class="hero__actions">
+                        <a class="btn btn--primary btn--arrow" href="contact.html#booking">Book Now</a>
+                        <span class="hero__status">Open today · 09:00 – 19:00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero__visual">
+                <div class="hero__media media">
+                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&amp;fit=crop&amp;w=1400&amp;q=80"
+                        alt="Bright pink-toned hair salon with styling chairs and mirrors" width="1400" height="1000"
+                        fetchpriority="high">
+                </div>
+                <div class="hero__neon" aria-hidden="true">Hair<br>Salon</div>
+                <span class="sparkle sparkle--md hero__spark-a sparkle--white" aria-hidden="true"></span>
+                <span class="sparkle sparkle--sm hero__spark-b sparkle--white sparkle--late" aria-hidden="true"></span>
+                <div class="hero__float hero__float--rating">
+                    <span class="stars" role="img" aria-label="Rated 4.9 out of 5"></span>
+                    <span><strong>4.9 / 5</strong>1,200+ happy reviews</span>
+                </div>
+                <div class="hero__float hero__float--clients">
+                    <span class="hero__float-icon"><span class="icon icon--heart" aria-hidden="true"></span></span>
+                    <span><strong>12,000+</strong>styles created</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee__track">
+                <ul class="marquee__group">
+                    <li class="marquee__item">Haircuts</li>
+                    <li class="marquee__item">Balayage</li>
+                    <li class="marquee__item">Hair styling</li>
+                    <li class="marquee__item">Keratin smoothing</li>
+                    <li class="marquee__item">Colouring</li>
+                    <li class="marquee__item">Bridal updos</li>
+                    <li class="marquee__item">Hair care</li>
+                    <li class="marquee__item">Curls &amp; waves</li>
+                </ul>
+                <ul class="marquee__group">
+                    <li class="marquee__item">Haircuts</li>
+                    <li class="marquee__item">Balayage</li>
+                    <li class="marquee__item">Hair styling</li>
+                    <li class="marquee__item">Keratin smoothing</li>
+                    <li class="marquee__item">Colouring</li>
+                    <li class="marquee__item">Bridal updos</li>
+                    <li class="marquee__item">Hair care</li>
+                    <li class="marquee__item">Curls &amp; waves</li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="section" aria-labelledby="services-title">
+            <div class="container services-row">
+                <div class="services-row__intro reveal reveal--left">
+                    <span class="eyebrow">Our services</span>
+                    <h2 class="services-row__title" id="services-title">Services<br>We Offer</h2>
+                    <a class="link-arrow" href="services.html">View All Services</a>
+                </div>
+                <ul class="services-grid">
+                    <li class="reveal" data-delay="1">
+                        <a class="service-card" href="services.html?cat=cut">
+                            <span class="service-card__icon"><span class="icon icon--lg icon--scissors"
+                                    aria-hidden="true"></span></span>
+                            Haircuts
+                        </a>
+                    </li>
+                    <li class="reveal" data-delay="2">
+                        <a class="service-card" href="services.html?cat=style">
+                            <span class="service-card__icon"><span class="icon icon--lg icon--dryer"
+                                    aria-hidden="true"></span></span>
+                            Hair Styling
+                        </a>
+                    </li>
+                    <li class="reveal" data-delay="3">
+                        <a class="service-card" href="services.html?cat=color">
+                            <span class="service-card__icon"><span class="icon icon--lg icon--brush"
+                                    aria-hidden="true"></span></span>
+                            Coloring
+                        </a>
+                    </li>
+                    <li class="reveal" data-delay="4">
+                        <a class="service-card" href="services.html?cat=care">
+                            <span class="service-card__icon"><span class="icon icon--lg icon--drop"
+                                    aria-hidden="true"></span></span>
+                            Hair Care
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="about-title">
+            <div class="container about-split">
+                <div class="about-split__visual reveal reveal--left">
+                    <div class="about-split__frame media">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&amp;fit=crop&amp;w=1000&amp;q=80"
+                            alt="Woman with long, glossy wavy hair" width="1000" height="850" loading="lazy">
+                    </div>
+                    <div class="about-split__sparks" aria-hidden="true">
+                        <span class="sparkle sparkle--xl"></span>
+                        <span class="sparkle sparkle--sm sparkle--late"></span>
+                    </div>
+                </div>
+                <div class="about-split__body reveal reveal--right">
+                    <div class="about-split__copy">
+                        <span class="eyebrow">About us</span>
+                        <h2 class="about-split__title" id="about-title">Beauty<br>Starts Here</h2>
+                        <p>We believe that great hair boosts confidence. Our talented stylists are here to help you look
+                            and feel your best.</p>
+                        <a class="btn btn--primary btn--arrow btn--sm" href="about.html">Learn More</a>
+                    </div>
+                    <ul class="about-split__list">
+                        <li class="about-split__item"><span class="icon icon--diamond"
+                                aria-hidden="true"></span>Professional<br>Stylists</li>
+                        <li class="about-split__item"><span class="icon icon--heart"
+                                aria-hidden="true"></span>Premium<br>Products</li>
+                        <li class="about-split__item"><span class="icon icon--smile"
+                                aria-hidden="true"></span>Friendly<br>Atmosphere</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="quiz-title" id="quiz">
+            <div class="container">
+                <div class="quiz__card reveal reveal--zoom" data-quiz>
+                    <div class="quiz__intro">
+                        <span class="eyebrow">Style quiz</span>
+                        <h2 id="quiz-title">Find your signature look</h2>
+                        <p>Three quick questions and we will match you with a style, a service and a gallery full of
+                            inspiration. No sign-up needed.</p>
+                        <span class="sparkle sparkle--lg" aria-hidden="true"></span>
+                    </div>
+
+                    <div class="quiz__panel" aria-live="polite">
+                        <div class="quiz__progress" aria-hidden="true">
+                            <span class="quiz__dot"></span>
+                            <span class="quiz__dot"></span>
+                            <span class="quiz__dot"></span>
+                        </div>
+
+                        <fieldset class="quiz__step">
+                            <legend class="quiz__legend"><span class="quiz__count">Question 1 of 3</span>What does your
+                                perfect weekend look like?</legend>
+                            <div class="quiz__options">
+                                <button class="quiz__option" type="button" data-result="waves">Brunch &amp; sunshine
+                                    with friends</button>
+                                <button class="quiz__option" type="button" data-result="sleek">A gallery opening in the
+                                    city</button>
+                                <button class="quiz__option" type="button" data-result="bold">Dancing until
+                                    sunrise</button>
+                                <button class="quiz__option" type="button" data-result="updo">A garden party or
+                                    wedding</button>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="quiz__step" hidden>
+                            <legend class="quiz__legend"><span class="quiz__count">Question 2 of 3</span>How do you do
+                                your hair in the morning?</legend>
+                            <div class="quiz__options">
+                                <button class="quiz__option" type="button" data-result="waves">Wake up and go — natural
+                                    is best</button>
+                                <button class="quiz__option" type="button" data-result="sleek">A precise 20-minute
+                                    routine</button>
+                                <button class="quiz__option" type="button" data-result="bold">Depends on my mood that
+                                    day</button>
+                                <button class="quiz__option" type="button" data-result="updo">Pin it up and
+                                    done</button>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="quiz__step" hidden>
+                            <legend class="quiz__legend"><span class="quiz__count">Question 3 of 3</span>Pick a colour
+                                story.</legend>
+                            <div class="quiz__options">
+                                <button class="quiz__option" type="button" data-result="waves">Honey &amp;
+                                    caramel</button>
+                                <button class="quiz__option" type="button" data-result="sleek">Espresso &amp;
+                                    chocolate</button>
+                                <button class="quiz__option" type="button" data-result="bold">Copper, berry &amp;
+                                    pink</button>
+                                <button class="quiz__option" type="button" data-result="updo">Blush &amp; pearl
+                                    blonde</button>
+                            </div>
+                        </fieldset>
+
+                        <div class="quiz__result" data-result-id="waves" hidden>
+                            <span class="quiz__badge"><span class="sparkle sparkle--sm" aria-hidden="true"></span>Your
+                                match</span>
+                            <h3 class="quiz__result-title">Beachy Waves &amp; Honey Balayage</h3>
+                            <p>Soft, sun-kissed and effortless. Loose waves with hand-painted golden highlights that
+                                grow out beautifully.</p>
+                            <div class="quiz__result-links">
+                                <a class="btn btn--primary btn--sm btn--arrow"
+                                    href="contact.html?service=balayage#booking">Book this look</a>
+                                <a class="link-arrow" href="gallery.html?filter=waves">See wavy looks</a>
+                            </div>
+                            <button class="quiz__restart" type="button" data-quiz-restart><span
+                                    class="icon icon--sm icon--refresh" aria-hidden="true"></span>Take the quiz
+                                again</button>
+                        </div>
+
+                        <div class="quiz__result" data-result-id="sleek" hidden>
+                            <span class="quiz__badge"><span class="sparkle sparkle--sm" aria-hidden="true"></span>Your
+                                match</span>
+                            <h3 class="quiz__result-title">Glass-Smooth Long Layers</h3>
+                            <p>Polished, rich and low-maintenance. A precision cut with keratin smoothing for
+                                mirror-like shine every day.</p>
+                            <div class="quiz__result-links">
+                                <a class="btn btn--primary btn--sm btn--arrow"
+                                    href="contact.html?service=keratin#booking">Book this look</a>
+                                <a class="link-arrow" href="gallery.html?filter=long">See long looks</a>
+                            </div>
+                            <button class="quiz__restart" type="button" data-quiz-restart><span
+                                    class="icon icon--sm icon--refresh" aria-hidden="true"></span>Take the quiz
+                                again</button>
+                        </div>
+
+                        <div class="quiz__result" data-result-id="bold" hidden>
+                            <span class="quiz__badge"><span class="sparkle sparkle--sm" aria-hidden="true"></span>Your
+                                match</span>
+                            <h3 class="quiz__result-title">Statement Colour</h3>
+                            <p>Copper, berry or full-on pink — you are not afraid of attention. We will design a colour
+                                that is vivid and healthy.</p>
+                            <div class="quiz__result-links">
+                                <a class="btn btn--primary btn--sm btn--arrow"
+                                    href="contact.html?service=colour#booking">Book this look</a>
+                                <a class="link-arrow" href="gallery.html?filter=color">See colour looks</a>
+                            </div>
+                            <button class="quiz__restart" type="button" data-quiz-restart><span
+                                    class="icon icon--sm icon--refresh" aria-hidden="true"></span>Take the quiz
+                                again</button>
+                        </div>
+
+                        <div class="quiz__result" data-result-id="updo" hidden>
+                            <span class="quiz__badge"><span class="sparkle sparkle--sm" aria-hidden="true"></span>Your
+                                match</span>
+                            <h3 class="quiz__result-title">Romantic Updo</h3>
+                            <p>Soft, polished and made for occasions. A sculpted updo with delicate loose strands that
+                                stays in place all night.</p>
+                            <div class="quiz__result-links">
+                                <a class="btn btn--primary btn--sm btn--arrow"
+                                    href="contact.html?service=updo#booking">Book this look</a>
+                                <a class="link-arrow" href="gallery.html?filter=updo">See updos</a>
+                            </div>
+                            <button class="quiz__restart" type="button" data-quiz-restart><span
+                                    class="icon icon--sm icon--refresh" aria-hidden="true"></span>Take the quiz
+                                again</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="teaser-title">
+            <div class="container teaser">
+                <div class="teaser__intro reveal reveal--left">
+                    <span class="eyebrow">Our work</span>
+                    <h2 id="teaser-title">Hair Ideas<br>for You</h2>
+                    <a class="btn btn--outline btn--arrow btn--sm" href="gallery.html">View Gallery</a>
+                </div>
+                <div class="teaser__grid">
+                    <a class="teaser__item media reveal" data-delay="1" href="gallery.html?filter=long"
+                        aria-label="See long hair looks">
+                        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&amp;fit=crop&amp;w=700&amp;q=80"
+                            alt="Smooth long brown hair" width="700" height="850" loading="lazy">
+                    </a>
+                    <a class="teaser__item media reveal" data-delay="2" href="gallery.html?filter=waves"
+                        aria-label="See wavy looks">
+                        <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&amp;fit=crop&amp;w=700&amp;q=80"
+                            alt="Golden blonde waves" width="700" height="850" loading="lazy">
+                    </a>
+                    <a class="teaser__item media reveal" data-delay="3" href="gallery.html?filter=updo"
+                        aria-label="See updos">
+                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&amp;fit=crop&amp;w=700&amp;q=80"
+                            alt="Elegant messy bun updo" width="700" height="850" loading="lazy">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--tint" aria-labelledby="reviews-title">
+            <div class="container">
+                <div class="section-head section-head--center reveal">
+                    <span class="eyebrow">Kind words</span>
+                    <h2 id="reviews-title">Loved by our clients</h2>
+                </div>
+                <div class="reviews">
+                    <figure class="review card reveal" data-delay="1">
+                        <span class="stars" role="img" aria-label="5 out of 5 stars"></span>
+                        <blockquote class="review__text">I came in with a Pinterest photo and left with exactly that —
+                            only better. The balayage is soft, shiny and still looks great three months later.
+                        </blockquote>
+                        <figcaption class="review__author"><span class="review__avatar"
+                                aria-hidden="true">A</span><span>Anna K.<small>Balayage &amp; cut</small></span>
+                        </figcaption>
+                    </figure>
+                    <figure class="review card reveal" data-delay="2">
+                        <span class="stars" role="img" aria-label="5 out of 5 stars"></span>
+                        <blockquote class="review__text">The friendliest salon I have ever visited. They really listen,
+                            never rush, and my hair has never felt this healthy.</blockquote>
+                        <figcaption class="review__author"><span class="review__avatar"
+                                aria-hidden="true">M</span><span>Marie L.<small>Keratin smoothing</small></span>
+                        </figcaption>
+                    </figure>
+                    <figure class="review card reveal" data-delay="3">
+                        <span class="stars" role="img" aria-label="5 out of 5 stars"></span>
+                        <blockquote class="review__text">Freja did my wedding updo and trial. It survived the ceremony,
+                            dinner and the dance floor. I got compliments all night!</blockquote>
+                        <figcaption class="review__author"><span class="review__avatar"
+                                aria-hidden="true">S</span><span>Sara H.<small>Bridal styling</small></span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="cta reveal reveal--zoom">
+                    <div class="cta__sparks" aria-hidden="true">
+                        <span class="sparkle sparkle--white"></span>
+                        <span class="sparkle sparkle--white sparkle--late"></span>
+                    </div>
+                    <div class="cta__text">
+                        <h2 class="cta__title" id="cta-title">Ready for a new look?</h2>
+                        <p class="cta__copy">Book your appointment today and let us take care of the rest.</p>
+                    </div>
+                    <a class="btn btn--white btn--arrow" href="contact.html#booking">Book Appointment</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container site-footer__main">
+            <a class="logo logo--footer" href="index.html"
+                aria-label="Hair Salon — home"><span>Hair</span><span>Salon</span></a>
+            <nav class="footer-nav" aria-label="Footer">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <ul class="social" aria-label="Social media">
+                <li><a class="social__link" href="https://www.instagram.com/" target="_blank" rel="noopener"
+                        aria-label="Instagram"><span class="icon icon--instagram" aria-hidden="true"></span></a></li>
+                <li><a class="social__link" href="https://www.facebook.com/" target="_blank" rel="noopener"
+                        aria-label="Facebook"><span class="icon icon--facebook" aria-hidden="true"></span></a></li>
+                <li><a class="social__link" href="https://www.tiktok.com/" target="_blank" rel="noopener"
+                        aria-label="TikTok"><span class="icon icon--tiktok" aria-hidden="true"></span></a></li>
+                <li><a class="social__link" href="https://www.youtube.com/" target="_blank" rel="noopener"
+                        aria-label="YouTube"><span class="icon icon--youtube" aria-hidden="true"></span></a></li>
+            </ul>
+        </div>
+        <div class="site-footer__bar">
+            <div class="container site-footer__bar-inner">
+                <span>© <span data-year>2026</span> Hair Salon. All rights reserved.</span>
+                <span>Mon–Fri 09:00–19:00 · Sat 10:00–17:00 · <a href="contact.html">Find us</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <button class="to-top" type="button" aria-label="Back to top"><span class="icon icon--arrow"
+            aria-hidden="true"></span></button>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/quiz.js" defer></script>
+</body>
+
+</html>
