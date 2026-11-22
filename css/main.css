@@ -1,3 +1,8 @@
+/* ==========================================================
+   Hair Salon — main stylesheet entry
+   Every visual (styles, icons, decorations, animations)
+   lives in these CSS files. HTML = text + semantic tags only.
+   ========================================================== */
 @import url("base.css");
 @import url("icons.css");
 @import url("components.css");
