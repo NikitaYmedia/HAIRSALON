@@ -1,0 +1,180 @@
+:root {
+    --font: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+    --pink: #ff1f75;
+    --pink-600: #e0125f;
+    --pink-400: #ff5c9a;
+    --pink-200: #ffc2d9;
+    --pink-100: #ffe3ee;
+    --pink-50: #fff3f7;
+    --ink: #14090f;
+    --muted: #6b5560;
+    --line: #f6d3e1;
+    --white: #ffffff;
+    --danger: #d4144f;
+
+    --radius-s: 12px;
+    --radius-m: 22px;
+    --radius-l: 36px;
+    --radius-pill: 999px;
+
+    --shadow-s: 0 6px 18px rgba(255, 31, 117, 0.12);
+    --shadow-m: 0 18px 40px rgba(255, 31, 117, 0.18);
+    --shadow-l: 0 30px 70px rgba(20, 9, 15, 0.18);
+
+    --container: 1200px;
+    --header-h: 84px;
+    --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 96px;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--ink);
+    background: var(--white);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+dl,
+dd,
+figure,
+blockquote {
+    margin: 0;
+}
+
+ul,
+ol {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+::selection {
+    background: var(--pink);
+    color: #fff;
+}
+
+:focus-visible {
+    outline: 3px solid var(--pink-400);
+    outline-offset: 3px;
+    border-radius: 6px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-size: clamp(1.9rem, 3.4vw, 2.7rem);
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+p {
+    color: var(--muted);
+}
+
+.container {
+    width: min(100% - 2.5rem, var(--container));
+    margin-inline: auto;
+}
+
+.section {
+    padding-block: clamp(3rem, 7vw, 6rem);
+}
+
+.section--tint {
+    background: linear-gradient(180deg, var(--pink-50), #fff);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.is-hidden {
+    display: none !important;
+}
+
+.skip-link {
+    position: fixed;
+    top: -4rem;
+    left: 1rem;
+    z-index: 300;
+    padding: 0.7rem 1.2rem;
+    border-radius: var(--radius-pill);
+    background: var(--pink);
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: top 0.25s var(--ease);
+}
+
+.skip-link:focus {
+    top: 1rem;
+}
+
+html {
+    scrollbar-color: var(--pink-400) var(--pink-50);
+}
